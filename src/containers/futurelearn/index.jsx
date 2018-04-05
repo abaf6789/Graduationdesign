@@ -6,7 +6,7 @@ import CourseFooter from "../../components/footer/index"
 export default class CourseSelect extends Component {
     render() {
         return (
-            <div>
+            <div style={{ display: "flex", flexDirection: "column" }}>
                 <CourseHeader />
                 <CourseContent />
                 <CourseFooter />

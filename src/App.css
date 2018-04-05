@@ -1,0 +1,89 @@
+.cHeader {
+    height: 200px;
+    background: #fafafa;
+    border: 1px solid #ededee;
+}
+
+.cContent {
+    flex: 1
+}
+
+.cFooter {
+    height: 550px;
+}
+
+.course-select-header {
+    padding: 16px 120px 16px 76px;
+    border-bottom: 0;
+    position: relative;
+    z-index: 2;
+    min-height: 76px;
+}
+
+.to-home {
+    display: block;
+    height: 42px;
+    width: 44px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.header-title {
+    margin-top: -.5em;
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    line-height: normal;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    line-height: 44px;
+    margin-left: 20px;
+}
+    a {
+        color: #393b42;
+        font-size: 0.6243rem;
+        padding-right: 10px    
+    }
+
+.header-bar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 100px;
+    height: 44px;
+}
+    .i-alarm {
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .alarm-LS {
+        width: 44px;
+        height: 44px;
+        display: inline-block;
+        line-height: 44px;
+        font-size: 14px;
+        background-color: #ff8151;
+        color: #fff;
+        text-align: center;
+        padding-right: 0
+    }
+        .alarm-LS:hover {
+            color: #fff
+        }
+
+.footer-tab {
+    display: table;
+    width: 648px;
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 60px
+}
+    .changing-over {
+        display: table-row;
+    }
+
+        .run-item {
+            display: table-cell;
+        }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class CourseFooter extends Component {
     render() {
         return (
-            <div>
+            <div className="cFooter">
                 <footer>ccc</footer>
             </div>
         )
