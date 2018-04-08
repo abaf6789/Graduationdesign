@@ -2,6 +2,40 @@ import React, { Component } from 'react'
 import { Icon } from 'semantic-ui-react'
 
 export default class CourseHeader extends Component {
+    state = {
+        tabSelected: {
+            li1: true,
+            li2: false,
+            li3: false
+        }
+    }
+    tabSelect1() {
+        this.setState({
+            tabSelected: {
+                li1: true,
+                li2: false,
+                li3: false
+            }
+        })
+    }
+    tabSelect2() {
+        this.setState({
+            tabSelected: {
+                li1: false,
+                li2: true,
+                li3: false
+            }
+        })
+    }
+    tabSelect3() {
+        this.setState({
+            tabSelected: {
+                li1: false,
+                li2: false,
+                li3: true
+            }
+        })
+    }
     render() {
         return (
             <div className="cHeader">
@@ -24,19 +58,28 @@ export default class CourseHeader extends Component {
                 </header>
                 <div className="footer-tab">
                     <ul className="changing-over">
-                        <li className="run-item">
-                            <a href="/">
-                                <Icon name="sticky note outline" size="big" />
+                        <li onClick={this.tabSelect1.bind(this)} className={this.state.tabSelected.li1 ? "run-item selected" : "run-item"}>
+                            <a>
+                                <div className="run-item-icon" style={{ marginLeft: "10px" }}>
+                                    <Icon name="sticky note outline" size="big" />
+                                </div>
+                                <p>To Do</p>
                             </a>
                         </li>
-                        <li className="run-item">
-                            <a href="/">
-                                <Icon name="sun" size="big" />
+                        <li onClick={this.tabSelect2.bind(this)} className={this.state.tabSelected.li2 ? "run-item selected" : "run-item"}>
+                            <a>
+                                <div className="run-item-icon" style={{ marginLeft: "8px" }}>
+                                    <Icon name="sun" size="big" />
+                                </div>
+                                <p>Activity</p>
                             </a>
                         </li>
-                        <li className="run-item">
-                            <a href="/">
-                                <Icon name="bullseye" size="big" />
+                        <li onClick={this.tabSelect3.bind(this)} className={this.state.tabSelected.li3 ? "run-item selected" : "run-item"}>
+                            <a>
+                                <div className="run-item-icon">
+                                    <Icon name="bullseye" size="big" />
+                                </div>
+                                <p>Progress</p>
                             </a>
                         </li>
                     </ul>
