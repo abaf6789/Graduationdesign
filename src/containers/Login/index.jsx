@@ -41,7 +41,7 @@ const LoginForm = () => (
                             type='password'
                         />
 
-                        <Button color='teal' fluid size='large'>Login</Button>
+                        <Button as="a" href="#/kecheng" color='teal' fluid size='large'>Login</Button>
                     </Segment>
                 </Form>
                 <Message>
