@@ -1,1 +1,1 @@
-export const BASE_URL = `${document.location.hostname}:${SERVER_PORT}`
+export const BASE_URL = `http://localhost:3000`

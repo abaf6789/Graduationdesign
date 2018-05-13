@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Login from "./containers/Login"
 import KeCheng from "./containers/Kecheng"
 import Discussion from "./containers/Discussion"
+import BackEnd from "./containers/Backend"
+import CourseStudy from "./containers/CourseStudy"
+import SignUp from "./containers/Signup"
 import './App.css';
 
 class App extends Component {
@@ -35,6 +38,21 @@ class App extends Component {
       case "#/discussion":
         tarUrl = (
           <Discussion />
+        )
+        break
+      case "#/backend":
+        tarUrl = (
+          <BackEnd />
+        )
+        break
+      case "#/coursestudy":
+        tarUrl = (
+          <CourseStudy />
+        )
+        break
+      case "#/signup":
+        tarUrl = (
+          <SignUp />
         )
     }
     return (

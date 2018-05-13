@@ -2,7 +2,7 @@ import React from 'react'
 import { createUser } from "../../common/Service.jsx"
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
-const LoginForm = () => (
+const SignUpForm = () => (
     <div className='login-form'>
         {/*
       Heads up! The styles below are necessary for the correct render of this example.
@@ -24,7 +24,7 @@ const LoginForm = () => (
             <Grid.Column style={{ maxWidth: 450 }}>
                 <Header as='h2' color='teal' textAlign='center'>
                     <Image src='https://raw.githubusercontent.com/Semantic-Org/Semantic-UI-React/master/docs/app/logo.png' />
-                    {' '}登录你的账号
+                    {' '}注册
         </Header>
                 <Form size='large'>
                     <Segment stacked>
@@ -42,15 +42,12 @@ const LoginForm = () => (
                             type='password'
                         />
 
-                        <Button as="a" onClick={createUser} color='teal' fluid size='large'>登录</Button>
+                        <Button as="a" onClick={createUser} color='teal' fluid size='large'>注册</Button>
                     </Segment>
                 </Form>
-                <Message>
-                    <a href='#/signup'>注册</a>
-                </Message>
             </Grid.Column>
         </Grid>
     </div>
 )
 
-export default LoginForm
+export default SignUpForm
