@@ -5,8 +5,8 @@ export const createUser = (account) => {
     return AxiosRequest.post(`api/users`, account)
 }
 
-export const login = () => {
-    return AxiosRequest.post(`api/users/session`, { name: "aass", password: "bbb" })
+export const login = (account) => {
+    return AxiosRequest.post(`api/users/session`, account)
 }
 
 export const getAllUsers = () => {
