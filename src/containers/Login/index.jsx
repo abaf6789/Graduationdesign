@@ -1,5 +1,5 @@
 import React from 'react'
-import { createUser } from "../../common/Service.jsx"
+import { createUser, login, getAllUsers } from "../../common/Service.jsx"
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
 const LoginForm = () => (
@@ -42,7 +42,7 @@ const LoginForm = () => (
                             type='password'
                         />
 
-                        <Button as="a" onClick={createUser} color='teal' fluid size='large'>登录</Button>
+                        <Button as="a" onClick={getAllUsers} color='teal' fluid size='large'>登录</Button>
                     </Segment>
                 </Form>
                 <Message>
