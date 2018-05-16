@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.4.0",
+    "axios": "^0.18.0",
+    "eslint": "^4.19.1",
     "fs.promised": "^3.0.0",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-compose": "^4.0.0",
     "koa-route": "^3.2.0",
     "koa-static": "^4.0.1",
+    "moment": "^2.22.1",
     "mongodb": "^3.0.5",
-    "ajv": "^6.4.0",
-    "axios": "^0.18.0",
-    "eslint": "^4.19.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
@@ -28,6 +29,10 @@
   "proxy": {
     "/api": {
       "target": "http://localhost:3000",
+      "ws": true
+    },
+    "/resource": {
+      "target": "/Users/xiaosa/Documents/personaldevelop/graduationdesign/resources",
       "ws": true
     }
   }

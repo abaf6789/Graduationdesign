@@ -20,7 +20,11 @@ export default class LoginForm extends Component {
         const { name, password } = this.state
         const account = { name: name, password: password }
         login(account).then(() => {
-            window.location.href = `#/kecheng`
+            if (name === "admin" && password === "admin") {
+                window.location.href = `#/backend`
+            } else {
+                window.location.href = `#/kecheng`
+            }
         }).catch(() => {
             alert("请输入正确密码")
         })

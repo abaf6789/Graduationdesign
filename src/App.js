@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Login from "./containers/Login"
 import KeCheng from "./containers/Kecheng"
-import Discussion from "./containers/Discussion"
+import Comment from "./containers/Discussion"
 import BackEnd from "./containers/Backend"
 import CourseStudy from "./containers/CourseStudy"
 import SignUp from "./containers/Signup"
@@ -37,7 +37,7 @@ class App extends Component {
         break
       case "#/discussion":
         tarUrl = (
-          <Discussion />
+          <Comment />
         )
         break
       case "#/backend":

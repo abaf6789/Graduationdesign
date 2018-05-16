@@ -35,8 +35,8 @@ export const getCourseById = (id) => {
     return AxiosRequest.get(`api/kecheng/${id}`)
 }
 
-export const createCourse = () => {
-    return AxiosRequest.post(`api/kecheng`)
+export const createCourse = (course) => {
+    return AxiosRequest.post(`api/kecheng`, course)
 }
 
 export const updateCourseById = (id) => {
@@ -58,7 +58,7 @@ export const getCommentById = (id) => {
 }
 
 export const createComment = () => {
-    return AxiosRequest.post(`api/comments`)
+    return AxiosRequest.post(`api/comments`, { userId: "5af995754b8670ca7ba2a833", content: "12321312", parentId: "", canReply: false })
 }
 
 export const updateCommentById = (id) => {
